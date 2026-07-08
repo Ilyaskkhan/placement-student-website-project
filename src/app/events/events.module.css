@@ -1,19 +1,21 @@
 .event {
   width: 100%;
-  margin-bottom: 5rem;
-  &:last-child {
-    margin: 0;
-  }
+}
+
+.event:last-child {
+  margin: 2rem auto;
+}
+
+.button * {
+  color: var(--brightGreen);
 }
 
 .button {
-  * {
-    color: var(--white);
-  }
   margin-top: 1rem;
   width: 10rem;
 }
 
 .image {
   margin: 1rem auto;
+  background-color: var(--oliveGreen);
 }

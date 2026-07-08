@@ -8,6 +8,8 @@ export type Event = {
   description: string;
   contactDetails?: { email?: string; phone?: string };
   image?: string;
+  category?: string;
+  slug: string;
 };
 
 export const events: Event[] = [
@@ -22,6 +24,7 @@ export const events: Event[] = [
       email: 'info@tenterdenfolkfestival.org.uk',
     },
     image: '/images/song-music-session.jpg',
+    category: 'Music', slug: 'all-day-song-and-music-session',
   },
   {
     date: 'Saturday 22nd August 2026',
@@ -33,6 +36,7 @@ export const events: Event[] = [
     description: "If you've always wanted to have a go at learning the fiddle and never known where to start, this one is for you!  Our tutor will take you through the basics, and there are even some instruments to borrow.",
     contactDetails: { email: 'petecastle42@gmail.com' },
     image: '/images/fiddleworkshop.jpg',
+    category: 'Workshop', slug: 'fiddle-workshop',
   },
   {
     date: 'Saturday 22nd August 2026',
@@ -44,6 +48,7 @@ export const events: Event[] = [
     description: 'Come and dance the night away with our Tenterden Folk Festival Ceilidh Band.  Our fabulous caller will take you through the steps so no experience necessary, just enthusiasm!  Suitable for families.',
     contactDetails: { email: 'petecastle42@gmail.com' },
     image: '/images/ceilidh.jpg',
+    category: 'Dance', slug: 'evening-ceilidh',
   },
   {
     date: 'Saturday 22nd August 2026',
@@ -54,5 +59,6 @@ export const events: Event[] = [
     ticketLink: 'https://www.musicglue.com/tenterdenfolkfestival/tickets',
     description: 'The main event!  From their debut gig at one of the largest Celtic music festivals anywhere in the world – Brittany’s famed Festival Interceltique de Lorient – the exhilarating, genre-busting Mec Lir have been frenzying festival audiences for a decade.',
     image: '/images/meclir.jpg',
+    category: 'Music Artist', slug: 'mec-lir',
   },
 ];
