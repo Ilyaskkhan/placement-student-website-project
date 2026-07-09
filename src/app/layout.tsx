@@ -1,11 +1,17 @@
 import '@mantine/core/styles.css';
 
-import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
+import { ColorSchemeScript, MantineProvider, createTheme, mantineHtmlProps } from '@mantine/core';
 
 export const metadata = {
   title: 'My Website',
   description: 'My Project Website',
 };
+
+const theme = createTheme({
+  fontFamily: 'Verdana, "Times New Roman", serif',
+  fontFamilyMonospace: 'Monaco, Courier, monospace',
+  headings: { fontFamily: 'Garamond, "Times New Roman", serif' },
+});
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider  theme={theme}>{children}</MantineProvider>
       </body>
     </html>
   );

@@ -12,24 +12,30 @@ body {
   width: 100%;
   margin: 2rem auto;
   padding: 0 2rem;
-  font-family: 'roboto', sans-serif;
+  font-family:  sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Garamond', 'Times New Roman', serif;
 }
 
 h1 {
-  font-family: 'roboto', sans-serif;
   font-size: 32px;
   line-height: 34px;
 }
 
 h2 {
   color: var(--oliveGreen);
-  font-family: 'roboto', sans-serif;
   font-size: 28px;
   line-height: 30px;
 }
 
 h3 {
-  font-family: 'roboto', sans-serif;
   font-size: 24px;
   line-height: 28px;
 }
@@ -61,7 +67,7 @@ a {
   --yellow: #fec100;
   --pink: #e7727f;
   --purple: #dca1b1;
-  --nav-background-color: var(--brightGreen);
+  --nav-background-color: var(--white);
   --nav-hover-color: var(--teal);
   --title-text-color: var(--oliveGreen);
   --body-text-color: var(--blue);

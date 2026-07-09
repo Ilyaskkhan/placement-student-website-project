@@ -3,7 +3,7 @@
 import PageLayout from '@/app/genericLayout';
 import { ReactNode } from 'react';
 import { events } from '../data';
-import { Flex, Button, Image, List, Stack, Group, Card, Badge, Box } from '@mantine/core';
+import { Flex, Button, Image, List, Stack, Group, Card, Badge, Box, Title, Text, Paper,} from '@mantine/core';
 import styles from './events.module.css';
 
 export default function Events(): ReactNode {
@@ -12,15 +12,15 @@ export default function Events(): ReactNode {
     <PageLayout>
       <Stack justify='center'>
 
-        <Box bg="rgb(46, 107, 80)">
+        <Paper px="md" py="xl" bg="rgb(46, 107, 80)" radius="lg" my="lg">
 
-        <h2>Welcome to the Meadow</h2>
-        <p>Two days of music, dance and craft in the heart of the British countryside </p>
-         <Button component='a' href="/tickets">
+        <Title order={2} c='white'>Welcome to the Meadow</Title>
+        <Text c='white'>Two days of music, dance and craft in the heart of the British countryside </Text>
+         <Button component='a' href="/tickets" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} >
            Buy Tickets
          </Button>
           
-          </Box>
+          </Paper>
 
 
 
@@ -33,8 +33,12 @@ export default function Events(): ReactNode {
                <Stack>
                 <Group justify="space-between">
                 
-                  <Badge color="blue" radius="sm">{event.category}</Badge>
-                  <Badge>age</Badge>
+                  <Badge variant="gradient" gradient={{ from: 'darkGreen', to: 'cyan' }} radius="sm">
+                    {event.category}
+                  </Badge>
+                  <Badge variant="gradient" gradient={{ from: 'darkGreen', to: 'cyan' }} >
+                    5+
+                  </Badge>
                 </Group>
 
                
@@ -52,15 +56,9 @@ export default function Events(): ReactNode {
                  <p>{event.description}</p> 
 
 
-                 <Button
-                  component='a'
-                  className={styles.button}
-                  href={event.ticketLink}
-              >
-                  Tickets
-                </Button>  
               </Stack>
 
+              
 
                {event.image && (
                 <Image

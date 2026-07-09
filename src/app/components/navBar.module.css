@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Garamond', 'Times New Roman', serif;
   text-transform: uppercase;
   background-color: var(--nav-background-color);
   :hover {

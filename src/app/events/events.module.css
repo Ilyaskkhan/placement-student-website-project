@@ -7,7 +7,7 @@
 }
 
 .button * {
-  color: var(--brightGreen);
+  color: var(--darkGreen);
 }
 
 .button {
@@ -17,5 +17,5 @@
 
 .image {
   margin: 1rem auto;
-  background-color: var(--oliveGreen);
+  background-color: var(--darkGreen);
 }
