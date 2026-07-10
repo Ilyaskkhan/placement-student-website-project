@@ -82,7 +82,7 @@ export default function Events(): ReactNode {
  <  Accordion defaultValue="Apples">
       <Accordion.Item  value="important-info">
       < Accordion.Control fw={700}>Important Information</Accordion.Control>
-      <Accordion.Panel>On-the-day tickets are available at the gate subject to capacity. Adult weekend gate price: £42.
+      <Accordion.Panel>On-the-day tickets are available at the gate subject to capacity.
 All tickets are non-refundable unless the event is cancelled.
 Wristbands must be worn at all times while on site.</Accordion.Panel>
     </Accordion.Item>
